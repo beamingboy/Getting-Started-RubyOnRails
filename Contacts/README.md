@@ -28,4 +28,15 @@ Things you may want to cover:
 1. make the project (rails new Contacts)
 2. generate the controller with action index (rails g controller home index)
 3. Change the root path add (root 'home#index')
-4. Creeated theabout am
+4. Creeated the about page manally
+   1. created the about.html.erb in views/home
+   2. created the controller method for about in  home_controller
+   3. Added the route for about page (get 'home/about')
+5. Added the bootstrap in application.html.erd for UI
+6. Create the partial for header
+   1. Created the file in views with starting with "_" (_header.html.erb)
+   2. use render in application.html.erb to create the response for header (<%= render 'home/header' %>)
+   3. Use boot strap to load the nav bar
+7. 
+   
+
