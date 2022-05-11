@@ -28,3 +28,4 @@ Things you may want to cover:
 1. make the project (rails new Contacts)
 2. generate the controller with action index (rails g controller home index)
 3. Change the root path add (root 'home#index')
+4. Creeated theabout am
