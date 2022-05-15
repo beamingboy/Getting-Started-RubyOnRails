@@ -22,7 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
+#terms to remember
+1. CRUD- create read update and delete
+2. 
 # Steps
 
 1. make the project (rails new Contacts)
@@ -37,6 +39,7 @@ Things you may want to cover:
    1. Created the file in views with starting with "_" (_header.html.erb)
    2. use render in application.html.erb to create the response for header (<%= render 'home/header' %>)
    3. Use boot strap to load the nav bar
-7. 
+7. Used the link_to to Add links to navbar(<%= link_to "about us", home_about_path, class:"hellO">)
+8. Used the CRUD to deploy the elements directly to database and schema.
    
 

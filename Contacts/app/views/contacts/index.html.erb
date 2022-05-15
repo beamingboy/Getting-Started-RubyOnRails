@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Contacts</h1>
+<table class="table">
+  <thead class="table-dark">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+<tbody id="contacts">
+  <% @contacts.each do |contact| %>
+    <%= render contact %>
+  <% end %>
+</tbody>
+
+</table>
+
+
