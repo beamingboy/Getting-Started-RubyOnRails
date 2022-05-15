@@ -21,7 +21,10 @@
     <%= link_to "Edit",edit_contact_path(contact), class:"text-white btn btn-secondary" %>
   </td>
   <td>
-      <%= button_to "Delete", contact, method: :delete,class:"btn btn-danger text-white" %>
+      <%= button_to "Delete", contact, method: :delete, confirm: "Are you sure?", class:"btn btn-danger text-white" %>
+    <%#= link_to contact, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger text-white" do %>
+<!--      <i class="remove icon"></i> Destroy-->
+    <%# end %>
   </td>
 
 </tr>

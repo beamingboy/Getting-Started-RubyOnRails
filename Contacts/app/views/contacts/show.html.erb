@@ -1,4 +1,4 @@
-<p style="color: green"><%= notice %></p>
+
 
 
 <div class="card" style="width: 20rem;">
@@ -25,6 +25,6 @@
 </div>
 <br/>
 <div>
-  <%= button_to "Delete", @contact, method: :delete,class:"text-white btn btn-danger" %>
+  <%= button_to "Delete", @contact, method: :delete,data: { confirm: 'Are you sure?' },class:"text-white btn btn-danger" %>
 
 </div>
