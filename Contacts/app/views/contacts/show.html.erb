@@ -1,16 +1,30 @@
 <p style="color: green"><%= notice %></p>
 
 
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <%= render @contact %>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<div class="card" style="width: 20rem;">
+  <img src="https://i.pinimg.com/736x/f3/3c/c0/f33cc07fa0044261d61a6645a67ef496.jpg" class=" img-thumbnail float-left" alt="...">
+  <div class=" card-body ">
+    <div class="header display-5" >
+      <%= @contact.first_name %> <%= @contact.last_name %>
+    </div>
+    <div class="header h4" >
+      <%= @contact.phone %>
+    </div>
+    <div class="header h4" >
+      <%= @contact.email %>
+    </div>
   </div>
-</div>
-<div>
-  <%= link_to "Edit this contact", edit_contact_path(@contact) %> |
-  <%= link_to "Back to contacts", contacts_path %>
 
-  <%= button_to "Destroy this contact", @contact, method: :delete %>
+</div>
+<br/>
+<div>
+  <%= link_to "Edit",edit_contact_path(@contact), class:"text-white btn btn-secondary" %>
+  <%= link_to "Contacts",root_path, class:"text-white btn btn-secondary" %>
+
+
+</div>
+<br/>
+<div>
+  <%= button_to "Delete", @contact, method: :delete,class:"text-white btn btn-danger" %>
+
 </div>

@@ -15,19 +15,13 @@
     <%= contact.email %>
   </td>
   <td>
-    <button type="button" class="btn btn-secondary">
-    <%= link_to "Show",contact, class:"text-white" %>
-    </button>
+    <%= link_to "Show",contact, class:"text-white btn btn-secondary" %>
   </td>
   <td>
-    <button type="button" class="btn btn-secondary">
-    <%= link_to "Edit",edit_contact_path(contact), class:"text-white" %>
-    </button>
+    <%= link_to "Edit",edit_contact_path(contact), class:"text-white btn btn-secondary" %>
   </td>
   <td>
-    <button type="button" class="btn btn-danger text-white">
-      <%= link_to 'Destroy',contact, :method => :delete,  :confirm => 'Are you sure?', class:"text-white"%>
-    </button>
+      <%= button_to "Delete", contact, method: :delete,class:"btn btn-danger text-white" %>
   </td>
 
 </tr>
