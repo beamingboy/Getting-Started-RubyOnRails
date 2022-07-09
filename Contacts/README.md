@@ -43,6 +43,7 @@ Things you may want to cover:
 8. Used the CRUD to deploy the elements directly to database and schema.
 9. Used and installed the devise gem
    1. Added the required line of code in config/environments/production(for herouko) and development.rd(forlocal server)
-   2. 
+   2. Followed the documentation and got all the view and models
+   3. Used the user_signed_in? to add condition in session
    
 
