@@ -41,5 +41,8 @@ Things you may want to cover:
    3. Use boot strap to load the nav bar
 7. Used the link_to to Add links to navbar(<%= link_to "about us", home_about_path, class:"hellO">)
 8. Used the CRUD to deploy the elements directly to database and schema.
+9. Used and installed the devise gem
+   1. Added the required line of code in config/environments/production(for herouko) and development.rd(forlocal server)
+   2. 
    
 
